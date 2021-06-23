@@ -4,7 +4,10 @@
            <meta charset="utf-8">
            <meta name="viewport" content="width=device-width, initial-scale=1">
            <link rel="stylesheet" href="bootstrap-5.0.1-dist/css/bootstrap.min.css" >
+           <script src="node_modules/jquery/dist/jquery.min.js"></script>
            <script src="bootstrap-5.0.1-dist/js/jquery-1.12.0.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+           <script src="bootstrap-5.0.1-dist/js/jquery-1.12.0.min.js"></script>
+           <script src="bootstrap-5.0.1-dist/js/bootstrap.min.js"></script>
 </head>
 <header>
     <nav class="navbar navbar-light bg-light">
@@ -18,7 +21,32 @@
 <body>
             <h1>Bonjour, voici mon premier Template Bootstrap!</h1>
             <button type="button" class="btn btn-primary">Primary</button>
-            <script src="bootstrap-5.0.1-dist/js/jquery-1.12.0.min.js"></script>
-            <script src="bootstrap-5.0.1-dist/js/bootstrap.min.js"></script>
+
+            <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+
+            <button type="button" class="btn btn-warning">Appuie ici</button> <br>
+
+            <form>
+              <div class="row">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="First name">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Last name">
+                </div>
+              </div>
+            </form> <br>
+
+            <button type="button" id="myAlert" class="close" data-dismiss="alert" aria-label="Close">
+              <script>
+                $('#myAlert').on('click', function () {
+                    alert("t'as cliqué");
+                })
+              </script>
+              <span aria-hidden="true">&times;</span>
+            </button>
+
+
+            
 </body>
 </html>
