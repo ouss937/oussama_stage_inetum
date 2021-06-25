@@ -4,10 +4,12 @@
            <meta charset="utf-8">
            <meta name="viewport" content="width=device-width, initial-scale=1">
            <link rel="stylesheet" href="bootstrap-5.0.1-dist/css/bootstrap.min.css" >
+           <link rel="stylesheet" href="main.css" >
+
            <script src="node_modules/jquery/dist/jquery.min.js"></script>
-           <script src="bootstrap-5.0.1-dist/js/jquery-1.12.0.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
            <script src="bootstrap-5.0.1-dist/js/jquery-1.12.0.min.js"></script>
            <script src="bootstrap-5.0.1-dist/js/bootstrap.min.js"></script>
+           <script type="text/javascript" src="redirect.js"></script>
 </head>
 <header>
     <nav class="navbar navbar-light bg-light">
@@ -44,9 +46,18 @@
                 })
               </script>
               <span aria-hidden="true">&times;</span>
+            </button> <br>
+
+            <button id="lienaccordeonotherpage" type="button" class="btn btn-danger btn-lg ">
+              Go to accordion in other page
             </button>
 
-
+            <button id="lienaccordeonthispage" type="button" class="btn btn-danger btn-lg ">
+              Go to accordion in this page
+            </button>
+            <div class="display_accordeon">
+              <iframe src="testaccordion.html"></iframe> 
+            </div>
             
 </body>
 </html>

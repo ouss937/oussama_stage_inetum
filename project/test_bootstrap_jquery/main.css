@@ -1,0 +1,9 @@
+.display_accordeon > iframe {
+    width: 100%;
+    height: 1000px;
+}
+
+#myaccordion-item {
+    padding-left: 0 !important ;
+    padding-right: 0 !important ;
+}
